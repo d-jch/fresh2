@@ -36,6 +36,10 @@ and read `props.data` in `define.page<typeof handler>()`. `ctx.render(<JSX />)`
 is valid in programmatic routes such as `app.get()`, but do not use the Fresh 1
 `ctx.render({ data })` pattern for handler-to-page data.
 
+Fresh 2 supports both file-based `routes/_error.tsx` error pages and
+programmatic `app.onError()` / `app.notFound()` handlers. Do not claim
+`_error.tsx` is unsupported.
+
 ## Essential Code Patterns
 
 ```ts
@@ -83,6 +87,14 @@ import "./assets/styles.css";
 | `[slug].ts` | `/:slug` | `/foo` |
 | `[...path].ts` | `/:path*` | `/a/b/c` |
 | `(group)/_layout.tsx` | (group layout) | shared UI |
+
+## Partials And View Transitions Quick Reference
+
+Use `f-client-nav` with `<Partial name="...">` for partial navigation. Use
+`f-partial="/partials/..."` when a link, button, or form should fetch an
+optimized partial response. For animated partial navigations, add
+`f-view-transition` alongside `f-client-nav`; details are in
+`references/advanced/view-transitions.md`.
 
 ## Island Props Serialization Quick Reference
 
