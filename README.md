@@ -4,10 +4,27 @@ A Claude Code plugin marketplace providing Fresh 2 framework reference documenta
 
 ## Installation
 
+### Claude Code
+
 ```bash
 /plugin add marketplace d-jch/fresh2
 /plugin install fresh2@fresh2
 ```
+
+### Codex
+
+This repository is also a Codex-compatible plugin. The local development
+marketplace entry lives at `~/.agents/plugins/marketplace.json` and points at
+`~/plugins/fresh2`, which is a symlink back to this repository.
+
+Install it in Codex with:
+
+```bash
+codex plugin add fresh2@personal
+```
+
+After changing plugin metadata or bundled docs, reinstall it and start a new
+Codex thread so the updated skill metadata is loaded.
 
 ## What's included
 
@@ -24,10 +41,17 @@ python3 scripts/sync_fresh_docs.py --verbose
 
 The script downloads Markdown from `freshframework/fresh`, rewrites `/docs/...` links for local plugin references, and replaces `skills/fresh2/references/`.
 
-After installing the plugin, you can also ask Claude Code to run:
+After installing the plugin in Claude Code, you can also run:
 
 ```text
 /fresh2:update-docs
+```
+
+For Codex/local development, run the script directly from the plugin root:
+
+```bash
+python3 scripts/sync_fresh_docs.py --verbose
+python3 -m unittest discover -s tests
 ```
 
 ## License
