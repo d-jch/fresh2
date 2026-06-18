@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Fresh 2 里 ctx.render() 变成什么了？我以前用 ctx.render({ data }) 传数据给页面组件，现在怎么改？",
+    "should_trigger": true
+  },
+  {
+    "query": "我在升级 Fresh 1 到 Fresh 2，handler 签名从 (req, ctx) 改成什么了？ctx.renderNotFound() 还能用吗？",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 2 的 page() helper 怎么用？我想从 handler 传递数据到 define.page 组件",
+    "should_trigger": true
+  },
+  {
+    "query": "vite.config.ts 里怎么配置 @fresh/plugin-vite？Fresh 2 还需要 fresh.config.ts 吗？",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 2 的 _error.tsx 怎么写？以前是 _404.tsx 和 _500.tsx 分开的",
+    "should_trigger": true
+  },
+  {
+    "query": "define.handlers 和 define.page 在 Fresh 2 里怎么配合使用？我想实现类型安全的 handler 到 page 数据传递",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 2 的 main.ts 怎么写？new App() 的链式调用有哪些方法？.fsRoutes() 是干嘛的？",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 2 项目结构里需要 client.ts 吗？CSS 怎么导入？以前是放在 static/ 目录的",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 2 的 HttpError 怎么用？throw new HttpError(404) 和以前的 ctx.renderNotFound() 有什么区别？",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 2 部署到 Deno Deploy 时 deno.json 的 tasks 怎么配置？dev 是 vite，start 是什么？",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我写个 Deno 脚本读取 CSV 文件",
+    "should_trigger": false
+  },
+  {
+    "query": "Preact 的 useSignal 怎么用？",
+    "should_trigger": false
+  },
+  {
+    "query": "React 项目怎么配置 Vite？",
+    "should_trigger": false
+  },
+  {
+    "query": "Fresh 1 的 ctx.render() 怎么用？",
+    "should_trigger": false
+  },
+  {
+    "query": "git rebase 怎么用？",
+    "should_trigger": false
+  },
+  {
+    "query": "PostgreSQL 怎么建表？",
+    "should_trigger": false
+  },
+  {
+    "query": "Deno KV 存储怎么用？",
+    "should_trigger": false
+  },
+  {
+    "query": "TypeScript 泛型怎么写？",
+    "should_trigger": false
+  },
+  {
+    "query": "Deno.test 怎么写测试？",
+    "should_trigger": false
+  },
+  {
+    "query": "Deno Deploy 环境变量怎么设置？",
+    "should_trigger": false
+  }
+]

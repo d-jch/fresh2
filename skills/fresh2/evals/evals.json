@@ -1,0 +1,35 @@
+{
+  "skill_name": "fresh2",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Help me create a new Fresh project with a counter island component. Show me the project structure and key files.",
+      "expected_output": "Should show Fresh 2 project structure with vite.config.ts, client.ts, main.ts using new App() with method chaining, and island using useSignal from @preact/signals. Should NOT show fresh.config.ts, fresh.gen.ts, or dev.ts.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm migrating my Fresh 1 app to Fresh 2. My current main.ts uses `import { start } from \"$fresh/server.ts\"` and my handlers have `(req, ctx)` signatures. What do I need to change?",
+      "expected_output": "Should explain: change imports to `import { App } from \"fresh\"`, change handler signatures to single `(ctx)` argument, remove fresh.config.ts and fresh.gen.ts, create vite.config.ts, update deno.json tasks.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "How do I pass data from a handler to a page component in Fresh? I want to fetch user data in the handler and display it on the page.",
+      "expected_output": "Should show using `page()` helper from fresh to pass data, and `define.page<typeof handler>` to receive it. Should NOT show the old ctx.render({ data }) pattern from Fresh 1.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "我在用 Fresh 框架开发一个博客网站，需要创建一个文章详情页，URL 是 /blog/[slug]。请帮我写出完整的路由文件。",
+      "expected_output": "应该使用 Fresh 2 的 define.handlers 和 define.page 模式，使用 page() 传递数据，使用 HttpError(404) 处理 404。不应该使用旧的 (req, ctx) 签名。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "How do I set up Tailwind CSS in my Fresh project? I'm using Fresh 2 with Vite.",
+      "expected_output": "Should explain using @tailwindcss/vite plugin in vite.config.ts, importing CSS in client.ts, NOT using @fresh/plugin-tailwindcss. Should show the correct vite.config.ts setup.",
+      "files": []
+    }
+  ]
+}

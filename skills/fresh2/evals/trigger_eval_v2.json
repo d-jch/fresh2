@@ -1,0 +1,82 @@
+[
+  {
+    "query": "我在 routes/api/users.ts 里写了个 GET handler，但访问 /api/users 返回 405 Method Not Allowed，这是怎么回事？我的 handler 用的是 define.handlers({ GET(ctx) { return Response.json({ users: [] }) } })",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 项目的 middleware 怎么写？我想在所有请求前检查用户登录状态，如果没登录就重定向到 /login 页面",
+    "should_trigger": true
+  },
+  {
+    "query": "ctx.state 里的数据怎么在 handler 和 page component 之间共享？我在 _middleware.ts 里设置了 ctx.state.user，但在页面组件里拿不到",
+    "should_trigger": true
+  },
+  {
+    "query": "island 组件里的 useSignal 状态在页面刷新后会丢失，怎么实现跨页面的状态持久化？多个 island 之间怎么共享同一个 signal？",
+    "should_trigger": true
+  },
+  {
+    "query": "routes/_layout.tsx 里怎么根据当前 URL 高亮导航菜单？我想给 layout 组件传入 url 和 state props",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 里怎么做文件上传？我有个 form 需要上传图片，用 multipart/form-data 提交到 POST handler",
+    "should_trigger": true
+  },
+  {
+    "query": "view transitions 在 Fresh 2 里怎么配置？我想让页面切换时有淡入淡出效果",
+    "should_trigger": true
+  },
+  {
+    "query": "Fresh 的 CSP (Content Security Policy) 中间件怎么配置？我想限制脚本来源只允许自己的域名",
+    "should_trigger": true
+  },
+  {
+    "query": "vite.config.ts 里怎么配置 fresh() 插件的 islandsDir 和 routeDir？我的项目结构比较特殊，islands 不在默认位置",
+    "should_trigger": true
+  },
+  {
+    "query": "我有个 routes/blog/[slug].tsx 文件，里面用了 define.page(async (ctx) => {...}) 直接在组件里获取数据，但页面渲染很慢，有什么优化建议？",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我写个 Deno 脚本，读取 ./data/*.json 文件并合并成一个数组输出到 stdout",
+    "should_trigger": false
+  },
+  {
+    "query": "我在用 Preact 做一个 Chrome 扩展的 popup 页面，不用 Fresh，怎么用 signals 管理 popup 的状态？",
+    "should_trigger": false
+  },
+  {
+    "query": "React 18 的 Suspense 和 lazy loading 怎么配合 Vite 的 code splitting 使用？",
+    "should_trigger": false
+  },
+  {
+    "query": "Fresh 1 的 ctx.render() 和 Fresh 2 的 page() 有什么区别？我记得以前是用 ctx.render({ data }) 来传数据的",
+    "should_trigger": false
+  },
+  {
+    "query": "怎么用 git rebase 把 feature 分支的 commits 合并到 main 分支上，同时保持 commit 历史整洁？",
+    "should_trigger": false
+  },
+  {
+    "query": "PostgreSQL 里怎么设计多对多关系的表？比如用户和角色的关联，需要中间表吗？",
+    "should_trigger": false
+  },
+  {
+    "query": "Deno 的 KV 存储怎么用？我想实现一个简单的 key-value 缓存",
+    "should_trigger": false
+  },
+  {
+    "query": "TypeScript 的泛型约束怎么写？我想让一个函数接受有 length 属性的类型参数",
+    "should_trigger": false
+  },
+  {
+    "query": "Deno.test 里怎么做参数化测试？同一个测试用例要用多组不同的输入数据跑",
+    "should_trigger": false
+  },
+  {
+    "query": "Deno Deploy 的环境变量怎么在本地开发时设置？deployctl 命令怎么用？",
+    "should_trigger": false
+  }
+]

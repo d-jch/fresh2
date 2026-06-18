@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "fresh2",
+  "owner": {
+    "name": "d-jch"
+  },
+  "plugins": [
+    {
+      "name": "fresh2",
+      "source": "./",
+      "description": "Fresh 2 framework reference with complete API documentation, code examples, and migration guide from Fresh 1. Use when working with Fresh framework, Deno web development, island architecture, Preact SSR, routing, middleware, signals, forms, layouts, Vite integration, deployment, data fetching, error handling, or any Fresh-related code.",
+      "version": "1.0.0",
+      "author": {
+        "name": "d-jch"
+      },
+      "category": "development"
+    }
+  ]
+}
