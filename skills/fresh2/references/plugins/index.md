@@ -3,13 +3,13 @@ description: "Extend fresh with plugins"
 ---
 
 Fresh itself can be extended through the methods available on the
-[`App`](/docs/concepts/app) class or on the `Builder` class. Most of the
+[`App`](../concepts/app.md) class or on the `Builder` class. Most of the
 features in Fresh itself are built using these APIs.
 
 ## Custom middlewares
 
 If you need to modify requests, add HTTP headers or pass additional data to
-other [middlewares](/docs/concepts/middleware) via `ctx.state`, then going with
+other [middlewares](../concepts/middleware.md) via `ctx.state`, then going with
 a middleware is the way to go.
 
 ```ts middleware/fresh.ts
@@ -20,7 +20,7 @@ const addXFreshHeader = define.middleware(async (ctx) => {
 });
 ```
 
-Learn more about [middlewares](/docs/concepts/middleware).
+Learn more about [middlewares](../concepts/middleware.md).
 
 ## Creating reusable plugins
 
@@ -51,14 +51,14 @@ const app = new App()
 ```
 
 For more complex plugins, you can combine multiple middlewares, add routes, or
-use the [`Builder`](/docs/advanced/builder) hooks for build-time processing.
+use the [`Builder`](../advanced/builder.md) hooks for build-time processing.
 
 ## Built-in plugins
 
 Fresh ships with the following plugins:
 
-- [cors()](/docs/plugins/cors) - Set CORS HTTP headers
-- [csrf()](/docs/plugins/csrf) - CSRF protection
-- [csp()](/docs/plugins/csp) - Content Security Policy headers
-- [trailingSlashes()](/docs/plugins/trailing-slashes) - Enforce trailing slash
+- [cors()](cors.md) - Set CORS HTTP headers
+- [csrf()](csrf.md) - CSRF protection
+- [csp()](csp.md) - Content Security Policy headers
+- [trailingSlashes()](trailing-slashes.md) - Enforce trailing slash
   behavior

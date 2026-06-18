@@ -10,7 +10,7 @@ write tests.
 
 ## Testing middlewares
 
-To test [middlewares](/docs/concepts/middleware) we're going to create a dummy
+To test [middlewares](../concepts/middleware.md) we're going to create a dummy
 app and return the relevant info we want to check in a custom `/` handler. This
 test assumes the `State` object in `utils.ts` has `text` property.
 
@@ -44,8 +44,8 @@ that adds a header to the returned response, you can assert against that too.
 
 ## Testing app wrapper or layouts
 
-Both the [app wrapper](/docs/advanced/app-wrapper) component and
-[layouts](/docs/advanced/layouts) can be tested in the same way.
+Both the [app wrapper](../advanced/app-wrapper.md) component and
+[layouts](../advanced/layouts.md) can be tested in the same way.
 
 ```tsx tests/appWrapper.test.tsx
 import { expect } from "@std/expect";
@@ -113,7 +113,7 @@ Deno.test("MyLayout - renders heading and content", async () => {
 ## Testing routes and handlers
 
 For testing your route handlers and business logic, you can use the same
-[`App`](/docs/concepts/app) pattern shown above. Fresh makes it easy to test
+[`App`](../concepts/app.md) pattern shown above. Fresh makes it easy to test
 individual routes without needing a full build process, as long as they export a
 handler:
 
@@ -145,7 +145,7 @@ behavior:
 ### Server-side rendering of islands
 
 You can test that your islands render correctly on the server using the same
-[`App`](/docs/concepts/app) pattern. Note: this requires a `.tsx` file extension
+[`App`](../concepts/app.md) pattern. Note: this requires a `.tsx` file extension
 to use JSX:
 
 ```tsx tests/island-ssr.test.tsx

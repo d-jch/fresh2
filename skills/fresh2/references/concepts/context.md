@@ -3,7 +3,7 @@ description: The Context object is shared across all middlewares and provides ac
 ---
 
 The `Context` instance is shared across all
-[middlewares](/docs/concepts/middleware) in Fresh. Use it to respond with HTML,
+[middlewares](middleware.md) in Fresh. Use it to respond with HTML,
 trigger redirects, access the incoming
 [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) or read
 other metadata.
@@ -100,7 +100,7 @@ app.use((ctx) => {
 
 If an error was thrown, this property will hold the caught value (default:
 `null`). This is typically used mainly on an
-[error page](/docs/advanced/error-handling).
+[error page](../advanced/error-handling.md).
 
 ```ts
 app.onError((ctx) => {

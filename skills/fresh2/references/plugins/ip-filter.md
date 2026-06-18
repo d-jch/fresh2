@@ -85,4 +85,4 @@ The `onBlocked` callback receives:
 
 - `remote.addr` -- the client's IP address
 - `remote.type` -- `"IPv4"` or `"IPv6"`
-- `ctx` -- the request [context](/docs/concepts/context)
+- `ctx` -- the request [context](../concepts/context.md)

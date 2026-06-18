@@ -39,7 +39,7 @@ referred to as the
 - **Lightweight** 🏎️ - Only ship the JavaScript you need
 - **Extensible** 🧩 - Nearly every aspect can be customized
 - **Powerful & small API** 🤗 - Familiar APIs make you productive quickly
-- **Built-in [OpenTelemetry](/docs/advanced/opentelemetry)** 📈 - Built-in
+- **Built-in [OpenTelemetry](../advanced/opentelemetry.md)** 📈 - Built-in
   support for OpenTelemetry
 
 ## When to use Fresh
@@ -54,9 +54,9 @@ home page, an e-commerce shop or something like GitHub or Bluesky.
 - CRUD apps
 
 Fresh's small API surface and
-[file-based conventions](/docs/concepts/file-routing) also make it a great fit
+[file-based conventions](../concepts/file-routing.md) also make it a great fit
 for AI-assisted development. Agents can scaffold routes, add
-[middleware](/docs/concepts/middleware), and build features with minimal context
+[middleware](../concepts/middleware.md), and build features with minimal context
 because the framework is simple and predictable.
 
 That said, if you want to build a Single-Page-App (=SPA), then Fresh is not the

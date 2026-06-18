@@ -76,7 +76,7 @@ Let's use a typical documentation page layout as an example. It often features a
 main content area and a sidebar of links to switch between pages of the
 documentation (marked green here).
 
-![A sketched layout of a typical documentation page with the sidebar on the left composed of green links and a main content area on the right. The main content area is labeled as Partial docs-content](/docs/fresh-partial-docs.png)
+![A sketched layout of a typical documentation page with the sidebar on the left composed of green links and a main content area on the right. The main content area is labeled as Partial docs-content](https://raw.githubusercontent.com/freshframework/fresh/main/docs/latest/fresh-partial-docs.png)
 
 The code for such a page (excluding styling) might look like this:
 
@@ -204,7 +204,7 @@ export default function LogView() {
 ## View Transitions
 
 Partial updates can be animated using the browser's
-[View Transitions API](/docs/advanced/view-transitions). Add `f-view-transition`
+[View Transitions API](view-transitions.md). Add `f-view-transition`
 alongside `f-client-nav` to enable smooth animated transitions between pages
 with zero JavaScript animation code.
 

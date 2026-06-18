@@ -4,7 +4,7 @@ description: Animate page navigations with the View Transitions API
 
 Fresh integrates the browser's native
 [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API)
-into its [partials](/docs/advanced/partials) system. When enabled, DOM updates
+into its [partials](partials.md) system. When enabled, DOM updates
 during client-side navigation are wrapped in `document.startViewTransition()`,
 giving you smooth animated transitions between pages with zero JavaScript
 animation code.

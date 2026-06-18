@@ -3,7 +3,7 @@ description: |
   Add middleware routes to intercept requests or responses for analytics purposes, access control, or anything else.
 ---
 
-A middleware is a function that receives a [`Context`](/docs/concepts/context)
+A middleware is a function that receives a [`Context`](context.md)
 object with the
 [`Request`](https://developer.mozilla.org/en-US/docs/Web/API/Request) and
 returns a
@@ -51,14 +51,14 @@ const middleware = define.middleware(async (ctx) => {
 
 Fresh ships with the following middlewares built-in:
 
-- [cors()](/docs/plugins/cors) - Set CORS HTTP headers
-- [csrf()](/docs/plugins/csrf) - CSRF protection
-- [csp()](/docs/plugins/csp) - Content Security Policy headers
-- [trailingSlashes()](/docs/plugins/trailing-slashes) - Enforce trailing slashes
+- [cors()](../plugins/cors.md) - Set CORS HTTP headers
+- [csrf()](../plugins/csrf.md) - CSRF protection
+- [csp()](../plugins/csp.md) - Content Security Policy headers
+- [trailingSlashes()](../plugins/trailing-slashes.md) - Enforce trailing slashes
 
 ## Filesystem-based middlewares
 
-With [file system based routing](/docs/concepts/file-routing) you can define a
+With [file system based routing](file-routing.md) you can define a
 middleware in a `_middleware.ts` file inside the `routes/` folder or any of its
 subfolders.
 

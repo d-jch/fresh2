@@ -5,7 +5,7 @@ description: |
 
 This page covers **file-based layouts** using `_layout.tsx` files. If you're
 defining routes programmatically with `new App()`, see
-[Layouts (programmatic)](/docs/advanced/layouts) instead.
+[Layouts (programmatic)](../advanced/layouts.md) instead.
 
 Layouts let you wrap groups of pages in shared UI - navigation bars, sidebars,
 footers, or any common structure. They are defined in `_layout.tsx` files and
@@ -43,7 +43,7 @@ outside in:
 ## Basic layout
 
 A layout receives `Component` (the child to wrap) and other props like `state`
-and `url`. Any state set by [middleware](/docs/concepts/middleware) is available
+and `url`. Any state set by [middleware](middleware.md) is available
 via `props.state`.
 
 ```tsx routes/_layout.tsx
@@ -152,7 +152,7 @@ export default define.layout(({ Component, state }) => {
 
 ## Layout vs app wrapper
 
-The [app wrapper](/docs/concepts/app) (`_app.tsx`) and layouts serve different
+The [app wrapper](app.md) (`_app.tsx`) and layouts serve different
 purposes:
 
 - **App wrapper** - the outermost `<html>`/`<head>`/`<body>` structure. There is

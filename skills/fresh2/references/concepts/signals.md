@@ -4,7 +4,7 @@ description: |
 ---
 
 [Signals](https://preactjs.com/guide/v10/signals/) are Preact's reactive
-primitive for managing state in [islands](/docs/concepts/islands). When a
+primitive for managing state in [islands](islands.md). When a
 signal's value changes, any component that reads it re-renders automatically -
 no need for `setState` or manual subscriptions.
 
@@ -120,13 +120,13 @@ export default function CartCount() {
 
 Since both islands import the same module-level signal, they share the same
 state automatically. See
-[Sharing state between islands](/docs/examples/sharing-state-between-islands)
+[Sharing state between islands](../examples/sharing-state-between-islands.md)
 for more patterns.
 
 ## Serialization
 
 When signals are passed as island props, Fresh handles
-[serialization](/docs/advanced/serialization) automatically:
+[serialization](../advanced/serialization.md) automatically:
 
 - The signal's current value is extracted on the server via `.peek()`
 - On the client, the value is wrapped back into a live `signal()` or
@@ -134,5 +134,5 @@ When signals are passed as island props, Fresh handles
 - Circular references and duplicate signal references are preserved
 
 The signal's inner value must itself be serializable (see
-[Islands - Passing props](/docs/concepts/islands#passing-props-to-islands) for
+[Islands - Passing props](islands.md#passing-props-to-islands) for
 the full list of supported types).

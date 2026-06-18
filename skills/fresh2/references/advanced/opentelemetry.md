@@ -12,11 +12,11 @@ configure an exporter.
 
 Fresh creates spans for:
 
-- **[Middleware](/docs/concepts/middleware) execution** - each middleware in the
+- **[Middleware](../concepts/middleware.md) execution** - each middleware in the
   chain
 - **Route handler execution** - handler function calls
 - **Rendering** - server-side page rendering, including async components
-- **[Static file](/docs/concepts/static-files) serving** - file lookups,
+- **[Static file](../concepts/static-files.md) serving** - file lookups,
   caching, and responses
 - **Lazy route loading** - dynamic imports of route modules on first access
 
@@ -53,7 +53,7 @@ deno task start
 
 ### With Deno Deploy
 
-[Deno Deploy](/docs/deployment/deno-deploy) collects Fresh traces automatically
+[Deno Deploy](../deployment/deno-deploy.md) collects Fresh traces automatically
 when using the Fresh preset - no configuration needed. Traces appear in the Deno
 Deploy dashboard.
 

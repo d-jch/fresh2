@@ -12,12 +12,12 @@ is a crucial element in HTML to set metadata for a page. It allows you to:
 - Include JavaScript code with `<script>`
 
 > [info]: The outer HTML structure including `<head>` is typically created
-> inside [`_app.tsx`](/docs/concepts/app).
+> inside [`_app.tsx`](../concepts/app.md).
 
 ## Passing metadata from `ctx.state`
 
 For simple scenarios passing metadata along from a handler or a
-[middleware](/docs/concepts/middleware) by writing to `ctx.state` is often
+[middleware](../concepts/middleware.md) by writing to `ctx.state` is often
 sufficient.
 
 ```tsx routes/_app.tsx
@@ -41,7 +41,7 @@ export default define.page((ctx) => {
 ## Using the `<Head>`-component
 
 For more complex scenarios, or to set page metadata from
-[islands](/docs/concepts/islands), Fresh ships with the `<Head>`-component.
+[islands](../concepts/islands.md), Fresh ships with the `<Head>`-component.
 
 ```tsx routes/about.tsx
 import { Head } from "fresh/runtime";
@@ -61,7 +61,7 @@ export default define.page((ctx) => {
 
 ### Dynamic head updates from islands
 
-The `<Head>` component works in [islands](/docs/concepts/islands) too. When
+The `<Head>` component works in [islands](../concepts/islands.md) too. When
 component state changes, the document head is updated automatically:
 
 ```tsx islands/MetaUpdater.tsx

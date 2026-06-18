@@ -70,7 +70,7 @@ export const handlers = define.handlers((ctx) => {
 ## Programmatic API routes
 
 API routes can also be defined directly on the app without
-[file-based routing](/docs/concepts/file-routing):
+[file-based routing](../concepts/file-routing.md):
 
 ```ts main.ts
 const app = new App()

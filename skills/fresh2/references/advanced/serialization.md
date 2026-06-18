@@ -3,7 +3,7 @@ description: |
   What types can be passed as island props, how Fresh serializes data between server and client, and common pitfalls.
 ---
 
-When Fresh renders a page on the server, [island](/docs/concepts/islands) props
+When Fresh renders a page on the server, [island](../concepts/islands.md) props
 must be serialized to JSON and sent to the browser for hydration. Fresh uses a
 custom serialization system that supports more types than standard
 `JSON.stringify`.
@@ -26,7 +26,7 @@ The following types can be passed as island props:
 | `Set`                                | Values must be serializable                                                                                          |
 | `Map`                                | Keys and values must be serializable                                                                                 |
 | `Uint8Array`                         | Binary data                                                                                                          |
-| `Signal`                             | From `@preact/signals` - see [Signals](/docs/concepts/signals)                                                       |
+| `Signal`                             | From `@preact/signals` - see [Signals](../concepts/signals.md)                                                       |
 | `Computed Signal`                    | Read-only signals                                                                                                    |
 | `Temporal.*`                         | `Instant`, `ZonedDateTime`, `PlainDate`, `PlainTime`, `PlainDateTime`, `PlainYearMonth`, `PlainMonthDay`, `Duration` |
 | JSX Elements                         | Server-rendered JSX passed to islands                                                                                |

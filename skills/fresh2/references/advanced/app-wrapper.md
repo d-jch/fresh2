@@ -17,7 +17,7 @@ Use an app wrapper when you need to:
 - Set a global `<body>` class or data attribute
 - Provide a consistent HTML skeleton without repeating it in every layout
 
-If you're using [file-based routing](/docs/concepts/file-routing), create a
+If you're using [file-based routing](../concepts/file-routing.md), create a
 `routes/_app.tsx` file. Otherwise, register it programmatically with
 `app.appWrapper()`.
 
@@ -65,14 +65,14 @@ function AppWrapper({ Component }) {
 app.appWrapper(AppWrapper);
 ```
 
-Only one app wrapper is supported per [`App`](/docs/concepts/app) instance.
+Only one app wrapper is supported per [`App`](../concepts/app.md) instance.
 
 ## How it fits in the render hierarchy
 
 When Fresh renders a page, the components nest like this:
 
 1. **App wrapper** (`_app.tsx`) - outermost, provides `<html>`/`<head>`/`<body>`
-2. **[Layouts](/docs/concepts/layouts)** (`_layout.tsx`) - shared page chrome
+2. **[Layouts](../concepts/layouts.md)** (`_layout.tsx`) - shared page chrome
    (nav, sidebar, footer)
 3. **Page component** - the route itself
 

@@ -7,7 +7,7 @@ This page collects common patterns you'll encounter when building Fresh apps.
 
 ## Protected routes
 
-Use [middleware](/docs/concepts/middleware) to check authentication and redirect
+Use [middleware](../concepts/middleware.md) to check authentication and redirect
 unauthenticated users:
 
 ```ts routes/dashboard/_middleware.ts
@@ -102,7 +102,7 @@ export default define.middleware(async (ctx) => {
 });
 ```
 
-See [Session management](/docs/examples/session-management) for a complete
+See [Session management](session-management.md) for a complete
 session example.
 
 ## Reading query parameters
@@ -176,7 +176,7 @@ export const handler = define.handlers({
 ## WebSockets
 
 Fresh provides first-class WebSocket support via `ctx.upgrade()`. See the full
-[WebSocket guide](/docs/advanced/websockets) for all options.
+[WebSocket guide](../advanced/websockets.md) for all options.
 
 ## Subdomain routing
 

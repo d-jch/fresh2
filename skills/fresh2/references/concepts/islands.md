@@ -40,7 +40,7 @@ const app = new App()
 ## Passing props to islands
 
 Passing props to islands is supported, but only if the props are
-[serializable](/docs/advanced/serialization). Fresh can serialize the following
+[serializable](../advanced/serialization.md). Fresh can serialize the following
 types of values:
 
 - Primitive types `string`, `number`, `boolean`, `bigint`, `undefined`, and
@@ -56,7 +56,7 @@ types of values:
   `PlainDateTime`, `PlainYearMonth`, `PlainMonthDay`, `Duration`)
 - Plain objects with string keys and serializable values
 - Arrays containing serializable values
-- Preact [Signals](/docs/concepts/signals) (if the inner value is serializable)
+- Preact [Signals](signals.md) (if the inner value is serializable)
 
 Circular references are supported. If an object or signal is referenced multiple
 times, it is only serialized once and the references are restored upon

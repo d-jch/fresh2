@@ -46,7 +46,7 @@ production.
 ### Replacing `dev.ts` with `vite.config.ts`
 
 Delete `dev.ts` and create a `vite.config.ts` file instead. Pass your custom
-Fresh configuration to the [fresh vite plugin](/docs/advanced/vite).
+Fresh configuration to the [fresh vite plugin](../advanced/vite.md).
 
 ```ts vite.config.ts
 import { defineConfig } from "vite";
@@ -98,7 +98,7 @@ export const app = new App()
 ## Merging error pages
 
 Both the `_500.tsx` and `_404.tsx` template have been unified into a single
-`_error.tsx` template. See [error pages](/docs/advanced/error-handling) for
+`_error.tsx` template. See [error pages](../advanced/error-handling.md) for
 details.
 
 ```diff Project structure
@@ -204,7 +204,7 @@ have a trailing slash at the end or that they will never have one.
 
 ### Unified middleware signatures
 
-[Middleware](/docs/concepts/middleware), handler and route component signatures
+[Middleware](../concepts/middleware.md), handler and route component signatures
 have been unified to all look the same. Instead of receiving two arguments, they
 receive one. The `Request` object is stored on the context object as `ctx.req`.
 
@@ -238,7 +238,7 @@ All the various context interfaces have been consolidated and simplified:
 
 | Fresh 1.x                                     | Fresh 2.x                           |
 | --------------------------------------------- | ----------------------------------- |
-| `AppContext`, `LayoutContext`, `RouteContext` | [`Context`](/docs/concepts/context) |
+| `AppContext`, `LayoutContext`, `RouteContext` | [`Context`](../concepts/context.md) |
 
 ### Context methods
 
@@ -300,12 +300,12 @@ const app = new App()
 
 The `createHandler` function was often used to launch Fresh for tests. This can
 be now done via vite's `createBuilder` function. See the
-[testing page](/docs/testing) for more information.
+[testing page](../testing/index.md) for more information.
 
 ## `deno compile`
 
 If you're using `deno compile` to generate a binary out of the Fresh app be sure
-to [update the command](/docs/deployment/deno-compile) to generate the binary.
+to [update the command](../deployment/deno-compile.md) to generate the binary.
 
 ## Getting help
 

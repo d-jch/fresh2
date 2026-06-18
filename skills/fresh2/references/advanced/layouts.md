@@ -3,7 +3,7 @@ description: "Create re-usable layouts across routes"
 ---
 
 This page covers **programmatic layouts** defined via `app.layout()`. If you're
-using file-based routing, see [Layouts (file-based)](/docs/concepts/layouts)
+using file-based routing, see [Layouts (file-based)](../concepts/layouts.md)
 instead.
 
 Layouts are plain Preact components that are inherited based on the matching
@@ -67,7 +67,7 @@ const app = new App()
 
 ## Options
 
-Ignore the [app wrapper](/docs/concepts/app) component:
+Ignore the [app wrapper](../concepts/app.md) component:
 
 ```ts
 app.layout("/foo/bar", MyComponent, { skipAppWrapper: true });

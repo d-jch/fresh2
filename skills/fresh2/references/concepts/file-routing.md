@@ -3,10 +3,10 @@ description: |
   Routes are the basic building block of Fresh applications. They are used to define the behaviour the application when a given path is requested.
 ---
 
-Use the `.fsRoutes()` helper on the [`App`](/docs/concepts/app) instance to
+Use the `.fsRoutes()` helper on the [`App`](app.md) instance to
 specify where file based routes should be inserted. It adds routes based on the
 structure in the `routes/` folder in your project (or any other folder you have
-specified when instantiating the [`fresh()` vite plugin](/docs/advanced/vite).
+specified when instantiating the [`fresh()` vite plugin](../advanced/vite.md).
 in `vite.config.ts`). When you add a new file there, it will register a new
 route automatically.
 
@@ -20,7 +20,7 @@ const app = new App({ basePath: "/foo" })
 
 > [info]: The `staticFiles()` middleware is required when using file based
 > routing. Otherwise the necessary JavaScript files for
-> [islands](/docs/concepts/islands) won't be served to the browser.
+> [islands](islands.md) won't be served to the browser.
 
 Example project structure:
 
@@ -49,7 +49,7 @@ Example project structure:
 **Special directories inside `routes/`:**
 
 - **`(_islands)`** - Files in this directory are treated as
-  [islands](/docs/concepts/islands), just like files in the top-level `islands/`
+  [islands](islands.md), just like files in the top-level `islands/`
   folder. This lets you co-locate islands next to the routes that use them.
 - **`(_components)`** - A conventional directory for non-island components that
   are only used by nearby routes. Fresh does not treat these files specially -
@@ -103,8 +103,8 @@ export const css = ["./assets/dashboard.css"];
 
 ## Route Groups
 
-When working with [layouts](/docs/advanced/layouts) or
-[middlewares](/docs/concepts/middleware), you'll sometimes come across a
+When working with [layouts](../advanced/layouts.md) or
+[middlewares](middleware.md), you'll sometimes come across a
 situation where you want your routes to inherit from a layout other than what's
 suggested by the URL segment.
 

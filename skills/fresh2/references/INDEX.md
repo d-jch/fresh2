@@ -1,70 +1,58 @@
 # Fresh 2 Documentation Reference Index
 
-This directory contains the complete Fresh 2 framework documentation organized by topic.
+Generated from `freshframework/fresh` `docs/latest`.
 
-## Getting Started
-- [Introduction](introduction/index.md) - Framework overview and features
-- [Getting Started](getting-started/index.md) - Project setup and first steps
-
-## Core Concepts
-- [Architecture](concepts/architecture.md) - How Fresh works internally
-- [App](concepts/app.md) - The App class and configuration
-- [Context](concepts/context.md) - Request context object
-- [Routing](concepts/routing.md) - Route patterns and matching
-- [File Routing](concepts/file-routing.md) - File-system based routes
-- [Middleware](concepts/middleware.md) - Request/response interception
-- [Islands](concepts/islands.md) - Interactive components with client hydration
-- [Signals](concepts/signals.md) - Reactive state management with @preact/signals
-- [Data Fetching](concepts/data-fetching.md) - Server-side data loading
-- [Layouts](concepts/layouts.md) - Shared UI wrappers
-- [Static Files](concepts/static-files.md) - Serving static assets
-
-## Advanced Features
-- [Forms](advanced/forms.md) - Form handling and submissions
-- [WebSockets](advanced/websockets.md) - Real-time communication
-- [View Transitions](advanced/view-transitions.md) - Page transition animations
-- [Partials](advanced/partials.md) - Partial page updates
-- [Error Handling](advanced/error-handling.md) - Error pages and HttpError
-- [Serialization](advanced/serialization.md) - Data serialization for islands
-- [Vite Integration](advanced/vite.md) - Vite plugin configuration
-- [Define Helpers](advanced/define.md) - Type-safe handlers and pages
-- [App Wrapper](advanced/app-wrapper.md) - Outer HTML shell
-- [Head Management](advanced/head.md) - Meta tags and SEO
-- [Layouts (Advanced)](advanced/layouts.md) - Programmatic layouts
-- [API Reference](advanced/api-reference.md) - Complete API documentation
-- [Builder](advanced/builder.md) - Legacy Builder class
-- [Environment Variables](advanced/environment-variables.md) - Configuration
-- [OpenTelemetry](advanced/opentelemetry.md) - Observability
-- [Troubleshooting](advanced/troubleshooting.md) - Common issues
-
-## Plugins
-- [CORS](plugins/cors.md) - Cross-origin resource sharing
-- [CSRF](plugins/csrf.md) - Cross-site request forgery protection
-- [CSP](plugins/csp.md) - Content security policy
-- [Trailing Slashes](plugins/trailing-slashes.md) - URL normalization
-- [IP Filter](plugins/ip-filter.md) - IP-based access control
-
-## Deployment
-- [Deno Deploy](deployment/deno-deploy.md) - Cloud deployment
-- [Docker](deployment/docker.md) - Container deployment
-- [Cloudflare Workers](deployment/cloudflare-workers.md) - Edge deployment
-- [Deno Compile](deployment/deno-compile.md) - Standalone binary
-
-## Testing
-- [Testing](testing/index.md) - Unit and integration testing
-
-## Migration
-- [Migration Guide](migration-guide/index.md) - Fresh 1 to Fresh 2 upgrade
-
-## Examples
-- [API Routes](examples/api-routes.md) - REST API endpoints
-- [Common Patterns](examples/common-patterns.md) - Best practices
-- [Session Management](examples/session-management.md) - User sessions
-- [Sharing State](examples/sharing-state-between-islands.md) - Island communication
-- [Active Links](examples/active-links.md) - Navigation highlighting
-- [DaisyUI](examples/daisyui.md) - DaisyUI integration
-- [Markdown](examples/markdown.md) - Markdown rendering
-- [Raw HTML](examples/rendering-raw-html.md) - HTML rendering
-
-## Contributing
-- [Contributing](contributing/index.md) - How to contribute to Fresh
+- [advanced / api reference](advanced/api-reference.md)
+- [advanced / app wrapper](advanced/app-wrapper.md)
+- [advanced / builder](advanced/builder.md)
+- [advanced / define](advanced/define.md)
+- [advanced / environment variables](advanced/environment-variables.md)
+- [advanced / error handling](advanced/error-handling.md)
+- [advanced / forms](advanced/forms.md)
+- [advanced / head](advanced/head.md)
+- [advanced / index](advanced/index.md)
+- [advanced / layouts](advanced/layouts.md)
+- [advanced / opentelemetry](advanced/opentelemetry.md)
+- [advanced / partials](advanced/partials.md)
+- [advanced / serialization](advanced/serialization.md)
+- [advanced / troubleshooting](advanced/troubleshooting.md)
+- [advanced / view transitions](advanced/view-transitions.md)
+- [advanced / vite](advanced/vite.md)
+- [advanced / websockets](advanced/websockets.md)
+- [concepts / app](concepts/app.md)
+- [concepts / architecture](concepts/architecture.md)
+- [concepts / context](concepts/context.md)
+- [concepts / data fetching](concepts/data-fetching.md)
+- [concepts / file routing](concepts/file-routing.md)
+- [concepts / index](concepts/index.md)
+- [concepts / islands](concepts/islands.md)
+- [concepts / layouts](concepts/layouts.md)
+- [concepts / middleware](concepts/middleware.md)
+- [concepts / routing](concepts/routing.md)
+- [concepts / signals](concepts/signals.md)
+- [concepts / static files](concepts/static-files.md)
+- [contributing / index](contributing/index.md)
+- [deployment / cloudflare workers](deployment/cloudflare-workers.md)
+- [deployment / deno compile](deployment/deno-compile.md)
+- [deployment / deno deploy](deployment/deno-deploy.md)
+- [deployment / docker](deployment/docker.md)
+- [deployment / index](deployment/index.md)
+- [examples / active links](examples/active-links.md)
+- [examples / api routes](examples/api-routes.md)
+- [examples / common patterns](examples/common-patterns.md)
+- [examples / daisyui](examples/daisyui.md)
+- [examples / index](examples/index.md)
+- [examples / markdown](examples/markdown.md)
+- [examples / rendering raw html](examples/rendering-raw-html.md)
+- [examples / session management](examples/session-management.md)
+- [examples / sharing state between islands](examples/sharing-state-between-islands.md)
+- [getting started / index](getting-started/index.md)
+- [introduction / index](introduction/index.md)
+- [migration guide / index](migration-guide/index.md)
+- [plugins / cors](plugins/cors.md)
+- [plugins / csp](plugins/csp.md)
+- [plugins / csrf](plugins/csrf.md)
+- [plugins / index](plugins/index.md)
+- [plugins / ip filter](plugins/ip-filter.md)
+- [plugins / trailing slashes](plugins/trailing-slashes.md)
+- [testing / index](testing/index.md)

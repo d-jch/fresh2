@@ -98,5 +98,5 @@ export const handlers = define.handlers((ctx) => {
 });
 ```
 
-See [File routing](/docs/concepts/file-routing) for more on the file-based
+See [File routing](file-routing.md) for more on the file-based
 routing convention.

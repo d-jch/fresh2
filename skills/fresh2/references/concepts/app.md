@@ -4,8 +4,8 @@ description: |
 ---
 
 The `App` class is the heart of Fresh and routes incoming requests to the
-correct [middlewares](/docs/concepts/middleware). This is where routes,
-middlewares, [layouts](/docs/concepts/layouts) and more are defined.
+correct [middlewares](middleware.md). This is where routes,
+middlewares, [layouts](layouts.md) and more are defined.
 
 ```ts main.ts
 const app = new App()
@@ -73,7 +73,7 @@ const app = new App()
 
 ## `.use()`
 
-Add one or more [middlewares](/docs/concepts/middleware). Middlewares are
+Add one or more [middlewares](middleware.md). Middlewares are
 matched left to right.
 
 ```ts
@@ -275,8 +275,8 @@ app.all("/api/foo", async () => {
 
 ## `.fsRoute()`
 
-Injects all [file-based routes](/docs/concepts/file-routing), middlewares,
-layouts and [error pages](/docs/advanced/error-handling) to the app instance.
+Injects all [file-based routes](file-routing.md), middlewares,
+layouts and [error pages](../advanced/error-handling.md) to the app instance.
 
 ```ts
 app.fsRoutes();
@@ -309,12 +309,12 @@ app.route("/about", {
 
 ## `.appWrapper()`
 
-Set the [App Wrapper](/docs/advanced/app-wrapper) component. This is where the
+Set the [App Wrapper](../advanced/app-wrapper.md) component. This is where the
 outer HTML, typically up until the `<body>`-tag is rendered.
 
 ## `.layout()`
 
-Set a [Layout](/docs/advanced/layouts) component at the specified path. The app
+Set a [Layout](../advanced/layouts.md) component at the specified path. The app
 wrapper component and prior layouts are inherited by default unless opted out.
 
 ## `.onError()`

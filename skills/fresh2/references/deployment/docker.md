@@ -7,7 +7,7 @@ tool to containerize projects and portably run them on any supported platform.
 
 When packaging your Fresh app for Docker, it is important that you set the
 `DENO_DEPLOYMENT_ID`
-[environment variable](/docs/advanced/environment-variables) in your container.
+[environment variable](../advanced/environment-variables.md) in your container.
 This variable needs to be set to an opaque string ID that represents the version
 of your application that is currently being run. This could be a Git commit
 hash, or a hash of all files in your project. It is critical for the function of

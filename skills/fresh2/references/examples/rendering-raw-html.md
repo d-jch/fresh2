@@ -4,7 +4,7 @@ description: |
 ---
 
 Text content in Fresh is always escaped, whether serverside rendered or rendered
-in [islands](/docs/concepts/islands). While this is generally desired, it can
+in [islands](../concepts/islands.md). While this is generally desired, it can
 create issues in certain situations.
 
 To address this you can render raw HTML via Preact's `dangerouslySetInnerHTML`

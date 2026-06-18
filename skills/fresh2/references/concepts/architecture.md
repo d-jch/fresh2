@@ -4,12 +4,12 @@ description: |
 ---
 
 Fresh is a server-first web framework. Pages are rendered on the server and only
-the interactive parts ([islands](/docs/concepts/islands)) ship JavaScript to the
+the interactive parts ([islands](islands.md)) ship JavaScript to the
 browser. This page explains how a request flows through the framework.
 
 ## Request lifecycle
 
-![Request lifecycle flow diagram](/docs/architecture-flow-v2.svg)
+![Request lifecycle flow diagram](https://raw.githubusercontent.com/freshframework/fresh/main/docs/latest/architecture-flow-v2.svg)
 
 ## Key concepts
 
@@ -26,7 +26,7 @@ browser. This means:
 
 Fresh uses the
 [islands architecture](https://jasonformat.com/islands-architecture/). Only
-components in the `islands/` directory are [hydrated](/docs/concepts/islands) in
+components in the `islands/` directory are [hydrated](islands.md) in
 the browser. Everything else is static HTML that never runs JavaScript on the
 client.
 
@@ -70,7 +70,7 @@ like authentication or logging to a subset of routes.
 
 ### Layout inheritance
 
-[Layouts](/docs/concepts/layouts) wrap page components and are inherited from
+[Layouts](layouts.md) wrap page components and are inherited from
 parent directories. A page at `routes/blog/post.tsx` inherits layouts from:
 
 1. `routes/_layout.tsx` (root layout)
@@ -78,7 +78,7 @@ parent directories. A page at `routes/blog/post.tsx` inherits layouts from:
 
 Layouts nest from the outside in: the root layout is outermost, each deeper
 layout wraps closer to the page, and the innermost layout directly wraps the
-page component. The [app wrapper](/docs/concepts/app) (`_app.tsx`) wraps
+page component. The [app wrapper](app.md) (`_app.tsx`) wraps
 everything.
 
 ### Build and deploy

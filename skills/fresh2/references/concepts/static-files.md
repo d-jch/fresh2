@@ -18,7 +18,7 @@ const app = new App()
 
 ## Imported assets vs static files
 
-When using Fresh with [Vite](/docs/advanced/vite) (now the default), **files
+When using Fresh with [Vite](../advanced/vite.md) (now the default), **files
 that you import in your JavaScript/TypeScript code should not be placed in the
 `static/` folder**. This prevents file duplication during the build process.
 
@@ -69,7 +69,7 @@ export default defineConfig({
 This is useful when you have a build step that generates assets into a separate
 directory and you want to keep them apart from hand-authored static files.
 
-> [info]: If you're using the [Builder](/docs/advanced/builder) API instead of
+> [info]: If you're using the [Builder](../advanced/builder.md) API instead of
 > Vite, the same `staticDir` option accepts a string or an array of strings.
 
 ## Caching headers

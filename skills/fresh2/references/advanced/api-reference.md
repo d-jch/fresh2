@@ -18,15 +18,15 @@ import { App, createDefine, HttpError, page, staticFiles } from "fresh";
 
 | Export                                                                | Kind     | Description                                                                                        |
 | --------------------------------------------------------------------- | -------- | -------------------------------------------------------------------------------------------------- |
-| [`App`](https://jsr.io/@fresh/core/doc/~/App)                         | Class    | The main application class. See [App](/docs/concepts/app).                                         |
-| [`staticFiles`](https://jsr.io/@fresh/core/doc/~/staticFiles)         | Function | Middleware for serving static files. See [Static Files](/docs/concepts/static-files).              |
-| [`createDefine`](https://jsr.io/@fresh/core/doc/~/createDefine)       | Function | Create type-safe `define.*` helpers. See [Define Helpers](/docs/advanced/define).                  |
-| [`page`](https://jsr.io/@fresh/core/doc/~/page)                       | Function | Return data from a handler to a page component. See [Data Fetching](/docs/concepts/data-fetching). |
-| [`HttpError`](https://jsr.io/@fresh/core/doc/~/HttpError)             | Class    | Throw HTTP errors with status codes. See [Error Handling](/docs/advanced/error-handling).          |
-| [`cors`](https://jsr.io/@fresh/core/doc/~/cors)                       | Function | CORS middleware. See [cors](/docs/plugins/cors).                                                   |
-| [`csrf`](https://jsr.io/@fresh/core/doc/~/csrf)                       | Function | CSRF protection middleware. See [csrf](/docs/plugins/csrf).                                        |
-| [`csp`](https://jsr.io/@fresh/core/doc/~/csp)                         | Function | Content Security Policy middleware. See [csp](/docs/plugins/csp).                                  |
-| [`trailingSlashes`](https://jsr.io/@fresh/core/doc/~/trailingSlashes) | Function | Trailing slash enforcement middleware. See [trailingSlashes](/docs/plugins/trailing-slashes).      |
+| [`App`](https://jsr.io/@fresh/core/doc/~/App)                         | Class    | The main application class. See [App](../concepts/app.md).                                         |
+| [`staticFiles`](https://jsr.io/@fresh/core/doc/~/staticFiles)         | Function | Middleware for serving static files. See [Static Files](../concepts/static-files.md).              |
+| [`createDefine`](https://jsr.io/@fresh/core/doc/~/createDefine)       | Function | Create type-safe `define.*` helpers. See [Define Helpers](define.md).                  |
+| [`page`](https://jsr.io/@fresh/core/doc/~/page)                       | Function | Return data from a handler to a page component. See [Data Fetching](../concepts/data-fetching.md). |
+| [`HttpError`](https://jsr.io/@fresh/core/doc/~/HttpError)             | Class    | Throw HTTP errors with status codes. See [Error Handling](error-handling.md).          |
+| [`cors`](https://jsr.io/@fresh/core/doc/~/cors)                       | Function | CORS middleware. See [cors](../plugins/cors.md).                                                   |
+| [`csrf`](https://jsr.io/@fresh/core/doc/~/csrf)                       | Function | CSRF protection middleware. See [csrf](../plugins/csrf.md).                                        |
+| [`csp`](https://jsr.io/@fresh/core/doc/~/csp)                         | Function | Content Security Policy middleware. See [csp](../plugins/csp.md).                                  |
+| [`trailingSlashes`](https://jsr.io/@fresh/core/doc/~/trailingSlashes) | Function | Trailing slash enforcement middleware. See [trailingSlashes](../plugins/trailing-slashes.md).      |
 
 **Types:**
 
@@ -55,7 +55,7 @@ import { App, createDefine, HttpError, page, staticFiles } from "fresh";
 ## `fresh/runtime`
 
 Shared runtime utilities for both server and client code. Safe to import in
-[islands](/docs/concepts/islands).
+[islands](../concepts/islands.md).
 
 ```ts
 import {
@@ -71,10 +71,10 @@ import {
 | Export                                                                | Kind      | Description                                                                                    |
 | --------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------- |
 | [`IS_BROWSER`](https://jsr.io/@fresh/core/doc/runtime/~/IS_BROWSER)   | Constant  | `true` in the browser, `false` on the server. Use to guard browser-only code.                  |
-| [`asset`](https://jsr.io/@fresh/core/doc/runtime/~/asset)             | Function  | Add cache-busting query params to asset URLs. See [Static Files](/docs/concepts/static-files). |
+| [`asset`](https://jsr.io/@fresh/core/doc/runtime/~/asset)             | Function  | Add cache-busting query params to asset URLs. See [Static Files](../concepts/static-files.md). |
 | [`assetSrcSet`](https://jsr.io/@fresh/core/doc/runtime/~/assetSrcSet) | Function  | Apply `asset()` to all URLs in a `srcset` string.                                              |
-| [`Partial`](https://jsr.io/@fresh/core/doc/runtime/~/Partial)         | Component | Mark a region for partial updates. See [Partials](/docs/advanced/partials).                    |
-| [`Head`](https://jsr.io/@fresh/core/doc/runtime/~/Head)               | Component | Add elements to the document `<head>`. See [<head> element](/docs/advanced/head).              |
+| [`Partial`](https://jsr.io/@fresh/core/doc/runtime/~/Partial)         | Component | Mark a region for partial updates. See [Partials](partials.md).                    |
+| [`Head`](https://jsr.io/@fresh/core/doc/runtime/~/Head)               | Component | Add elements to the document `<head>`. See [<head> element](head.md).              |
 | [`HttpError`](https://jsr.io/@fresh/core/doc/runtime/~/HttpError)     | Class     | HTTP error class (re-exported from `fresh`).                                                   |
 
 ## `fresh/dev`
@@ -87,7 +87,7 @@ import { Builder } from "fresh/dev";
 
 | Export                                                    | Kind  | Description                                                            |
 | --------------------------------------------------------- | ----- | ---------------------------------------------------------------------- |
-| [`Builder`](https://jsr.io/@fresh/core/doc/dev/~/Builder) | Class | Pre-Vite build system (legacy). See [Builder](/docs/advanced/builder). |
+| [`Builder`](https://jsr.io/@fresh/core/doc/dev/~/Builder) | Class | Pre-Vite build system (legacy). See [Builder](builder.md). |
 
 **Types:**
 

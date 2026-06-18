@@ -5,7 +5,7 @@ description: "Deploy Fresh on Deno Deploy"
 The recommended way to deploy Fresh is by using
 [Deno Deploy](https://deno.com/deploy). It will automatically create branch
 previews for pull requests, collect request and HTTP metrics, as well as collect
-[traces](/docs/advanced/opentelemetry) for you out of the box.
+[traces](../advanced/opentelemetry.md) for you out of the box.
 
 ## Setup
 
@@ -37,9 +37,9 @@ You can set environment variables in the Deno Deploy dashboard under your
 project's **Settings > Environment Variables** section. These are available at
 runtime via `Deno.env.get()`.
 
-For variables that need to be available in [island](/docs/concepts/islands) code
+For variables that need to be available in [island](../concepts/islands.md) code
 (client-side), prefix them with `FRESH_PUBLIC_` - see
-[Environment Variables](/docs/advanced/environment-variables).
+[Environment Variables](../advanced/environment-variables.md).
 
 ## Custom domains
 

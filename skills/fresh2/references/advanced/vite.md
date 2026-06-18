@@ -5,7 +5,7 @@ description: |
 
 Fresh 2 uses [Vite](https://vite.dev/) for development and production builds.
 The Fresh Vite plugin handles JSX configuration, Hot Module Replacement (HMR),
-[island](/docs/concepts/islands) discovery, client/server code splitting, and
+[island](../concepts/islands.md) discovery, client/server code splitting, and
 React-to-Preact aliasing.
 
 ## Configuration
@@ -88,7 +88,7 @@ implementation.
 ## Migrating from the Builder to Vite
 
 If your Fresh 2 project was created with `--builder` (or predates the Vite
-plugin), it uses the legacy [`Builder`](/docs/advanced/builder) class wired up
+plugin), it uses the legacy [`Builder`](builder.md) class wired up
 in `dev.ts`. Migrating to Vite is mostly a matter of swapping `dev.ts` for a
 `vite.config.ts`, moving CSS into the module graph, and updating `deno.json`.
 

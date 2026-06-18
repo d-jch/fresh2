@@ -18,7 +18,7 @@ Fresh supports two kind of error pages:
 
 ## Generic error pages
 
-To add an error page use [`app.onError()`](/docs/concepts/app#onerror).
+To add an error page use [`app.onError()`](../concepts/app.md#onerror).
 
 ```ts main.ts
 import { App } from "fresh";
@@ -68,7 +68,7 @@ const app = new App()
 ```
 
 Accessing an unknown route like `/invalid` will trigger the `notFound`
-[middleware](/docs/concepts/middleware). Contrary to generic error pages this
+[middleware](../concepts/middleware.md). Contrary to generic error pages this
 handler cannot be nested.
 
 ## Throwing HTTP errors
@@ -119,4 +119,4 @@ app.onError("*", (ctx) => {
 ```
 
 `HttpError` is also available in the browser via `fresh/runtime` for use in
-[island code](/docs/concepts/islands).
+[island code](../concepts/islands.md).
