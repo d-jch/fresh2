@@ -1,7 +1,7 @@
 ---
 name: fresh2
 description: |
-  Fresh 2 framework reference with complete API documentation, code examples, and migration guide from Fresh 1. Use this skill when working with Fresh framework, Deno web development, island architecture, Preact SSR, routing, middleware, signals, forms, layouts, Vite integration, deployment, data fetching, error handling, or any Fresh-related code. Provides accurate Fresh 2 APIs: define.handlers, define.page, page() helper, HttpError, @preact/signals, @fresh/plugin-vite, _layout.tsx, _error.tsx, _app.tsx, vite.config.ts. Includes complete documentation in references/ directory.
+  Fresh 2 framework reference with complete API documentation, code examples, and migration guide from Fresh 1. Use this skill when working with Fresh framework, Deno web development, island architecture, Preact SSR, routing, file routing, middleware, islands, signals, island props serialization, forms, layouts, static files, Vite integration, deployment, testing, data fetching, error handling, partials, WebSockets, plugins, migration, or any Fresh-related code. Provides accurate Fresh 2 APIs: define.handlers, define.page, page() helper, HttpError, @preact/signals, @fresh/plugin-vite, _layout.tsx, _error.tsx, _app.tsx, vite.config.ts. Includes complete documentation in references/ directory.
 ---
 
 # Fresh 2 Framework Reference
@@ -78,6 +78,17 @@ import "./assets/styles.css";
 | `[slug].ts` | `/:slug` | `/foo` |
 | `[...path].ts` | `/:path*` | `/a/b/c` |
 | `(group)/_layout.tsx` | (group layout) | shared UI |
+
+## Island Props Serialization Quick Reference
+
+Fresh can serialize more than plain JSON for island props. Supported values
+include primitives, `bigint`, special numbers, arrays, plain objects, `Date`,
+`URL`, `RegExp`, `Set`, `Map`, `Uint8Array`, `Signal`, computed signals,
+Temporal values, JSX elements, and circular/shared references.
+
+Do not pass functions, class instances, symbols, `WeakMap`, `WeakSet`, streams,
+or promises as island props. For details, read
+`references/advanced/serialization.md`.
 
 ## Documentation References
 

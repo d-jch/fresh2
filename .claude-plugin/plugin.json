@@ -1,11 +1,24 @@
 {
   "name": "fresh2",
-  "version": "1.0.1",
-  "description": "Fresh 2 framework reference with complete API documentation, code examples, and migration guide from Fresh 1. Use when working with Fresh framework, Deno web development, island architecture, Preact SSR, routing, middleware, signals, forms, layouts, Vite integration, deployment, data fetching, error handling, or any Fresh-related code.",
+  "version": "1.0.1+codex.20260618144016",
+  "description": "Fresh 2 framework reference with complete API documentation, code examples, and migration guide from Fresh 1. Use when working with Fresh framework, Deno web development, island architecture, Preact SSR, routing, file routing, middleware, islands, signals, island props serialization, forms, layouts, static files, Vite integration, deployment, testing, data fetching, error handling, partials, WebSockets, plugins, migration, or any Fresh-related code.",
   "author": {
     "name": "d-jch"
   },
   "repository": "https://github.com/d-jch/fresh2",
   "license": "MIT",
-  "keywords": ["fresh", "deno", "framework", "island-architecture", "preact", "ssr", "vite"]
+  "keywords": [
+    "fresh",
+    "deno",
+    "framework",
+    "island-architecture",
+    "preact",
+    "ssr",
+    "vite",
+    "testing",
+    "websockets",
+    "partials",
+    "static-files",
+    "serialization"
+  ]
 }

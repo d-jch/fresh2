@@ -1,0 +1,39 @@
+{
+  "name": "fresh2",
+  "version": "1.0.1+codex.20260618144016",
+  "description": "Fresh 2 framework reference with complete API documentation, code examples, and migration guide from Fresh 1. Use when working with Fresh framework, Deno web development, island architecture, Preact SSR, routing, file routing, middleware, islands, signals, island props serialization, forms, layouts, static files, Vite integration, deployment, testing, data fetching, error handling, partials, WebSockets, plugins, migration, or any Fresh-related code.",
+  "author": {
+    "name": "d-jch"
+  },
+  "skills": "./skills/",
+  "repository": "https://github.com/d-jch/fresh2",
+  "license": "MIT",
+  "keywords": [
+    "fresh",
+    "deno",
+    "framework",
+    "island-architecture",
+    "preact",
+    "ssr",
+    "vite",
+    "testing",
+    "websockets",
+    "partials",
+    "static-files",
+    "serialization"
+  ],
+  "interface": {
+    "displayName": "Fresh 2",
+    "shortDescription": "Fresh 2 framework reference for Codex.",
+    "longDescription": "Fresh 2 adds up-to-date framework reference material, API patterns, examples, and migration guidance so Codex can avoid outdated Fresh 1 APIs when working in Deno Fresh projects.",
+    "developerName": "d-jch",
+    "category": "Development",
+    "capabilities": [
+      "Fresh 2 API reference",
+      "Deno web development guidance",
+      "Fresh 1 to Fresh 2 migration guidance",
+      "Bundled documentation references"
+    ],
+    "defaultPrompt": "Use the fresh2 skill before changing Fresh, Deno web, Preact route, file routing, island, island props serialization, middleware, static files, Vite, testing, partials, WebSockets, deployment, or migration code. Read the relevant bundled references first and avoid Fresh 1 API patterns."
+  }
+}
