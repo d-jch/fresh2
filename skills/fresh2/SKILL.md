@@ -31,6 +31,11 @@ Fresh 2 is a full-stack web framework for Deno with Island Architecture. This sk
 | Dev server | `dev.ts` | `vite` |
 | Error pages | `_404.tsx` + `_500.tsx` | `_error.tsx` |
 
+For file routes that load data in `define.handlers()`, return `page({ data })`
+and read `props.data` in `define.page<typeof handler>()`. `ctx.render(<JSX />)`
+is valid in programmatic routes such as `app.get()`, but do not use the Fresh 1
+`ctx.render({ data })` pattern for handler-to-page data.
+
 ## Essential Code Patterns
 
 ```ts

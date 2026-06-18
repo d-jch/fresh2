@@ -132,19 +132,13 @@ app.get("/old-url", (ctx) => {
 
 ## `.render()`
 
-Render JSX and create a HTML `Response` from programmatic routes such as
-`app.get()`.
+Render JSX and create a HTML `Response`.
 
 ```tsx
 app.get("/", (ctx) => {
   return ctx.render(<h1>hello world</h1>);
 });
 ```
-
-For file routes that load data in `define.handlers()`, prefer returning
-`page({ data })` from the handler and reading `props.data` in
-`define.page<typeof handler>()`. Do not use the Fresh 1 style
-`ctx.render({ data })` pattern for handler-to-page data.
 
 Set custom response headers or other metadata:
 
